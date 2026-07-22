@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Versões do Sistema</title>
+  <link rel="stylesheet" href="assets/estilos.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <div class="cabecalho-conteudo">
+      <div class="marca">
+        <span class="marca-logo" aria-hidden="true">L</span>
+        <div>
+          <h1 id="titulo-sistema">Versões do Sistema</h1>
+          <p class="subtitulo">Novidades, melhorias, correções e migrações</p>
+        </div>
+      </div>
+      <button type="button" class="botao-secundario alternar-menu" id="alternar-menu" aria-expanded="false" aria-controls="lista-versoes">
+        Versões
+      </button>
+    </div>
+  </header>
+
+  <div class="pagina">
+    <aside class="lateral" id="lateral">
+      <h2 class="lateral-titulo">Versões</h2>
+      <nav>
+        <ul class="lista-versoes" id="lista-versoes"></ul>
+      </nav>
+    </aside>
+
+    <main class="conteudo">
+      <section class="filtros" aria-label="Filtros">
+        <fieldset class="filtro-tipos">
+          <legend>Tipo</legend>
+          <div class="chips" id="filtro-tipos"></div>
+        </fieldset>
+        <button type="button" class="botao-secundario" id="limpar-filtros">Limpar filtros</button>
+      </section>
+
+      <div class="aviso" id="aviso" hidden></div>
+
+      <div id="releases"></div>
+    </main>
+  </div>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

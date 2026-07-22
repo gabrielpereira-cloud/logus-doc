@@ -1,0 +1,26 @@
+{
+  "versao": "07.26.20.00",
+  "data": "2026-07-08",
+  "itens": [
+    {
+      "tipo": "novidade",
+      "funcionalidade": "212 - Sugestão de Compra",
+      "texto": "Nova tela de sugestão de compra, que considera o giro do produto e o estoque mínimo para montar o pedido."
+    },
+    {
+      "tipo": "melhoria",
+      "funcionalidade": "900 - Relatórios",
+      "texto": "Todos os relatórios passaram a lembrar os últimos filtros utilizados por você."
+    },
+    {
+      "tipo": "correcao",
+      "funcionalidade": "210 - Pedido de Compra",
+      "texto": "Corrigido o arredondamento do valor total do pedido quando havia desconto por item."
+    },
+    {
+      "tipo": "migracao",
+      "funcionalidade": "402 - Contas a Receber",
+      "texto": "A tela de Contas a Receber foi migrada do sistema antigo para a nova plataforma web."
+    }
+  ]
+}

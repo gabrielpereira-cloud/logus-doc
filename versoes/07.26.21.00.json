@@ -1,0 +1,46 @@
+{
+  "versao": "07.26.21.00",
+  "data": "2026-07-21",
+  "itens": [
+    {
+      "tipo": "novidade",
+      "funcionalidade": "505 - Nota de Crédito e Débito",
+      "texto": "Agora você pode emitir Nota de Crédito e Nota de Débito diretamente pelo sistema, com a referência à nota de origem preenchida automaticamente."
+    },
+    {
+      "tipo": "novidade",
+      "funcionalidade": "506 - Consulta de Notas Emitidas",
+      "texto": "Nova consulta de notas emitidas com filtro por período, finalidade e situação junto à SEFAZ."
+    },
+    {
+      "tipo": "melhoria",
+      "funcionalidade": "101 - Curva ABC",
+      "texto": "A Curva ABC ficou mais rápida e agora permite exportar o resultado para planilha."
+    },
+    {
+      "tipo": "melhoria",
+      "funcionalidade": "215 - Movimentação de Estoque",
+      "texto": "Na movimentação de estoque você já vê o saldo atual do produto sem precisar abrir outra tela."
+    },
+    {
+      "tipo": "correcao",
+      "funcionalidade": "215 - Movimentação de Estoque",
+      "texto": "Corrigido o cálculo do custo médio quando a nota de entrada era lançada com data retroativa."
+    },
+    {
+      "tipo": "correcao",
+      "funcionalidade": "118 - Preços e Promoções",
+      "texto": "O filtro por fornecedor voltou a considerar produtos sem promoção ativa."
+    },
+    {
+      "tipo": "migracao",
+      "funcionalidade": "401 - Contas a Pagar",
+      "texto": "A tela de Contas a Pagar foi migrada do sistema antigo para a nova plataforma web, com o mesmo fluxo de baixa e agora com filtros salvos por usuário."
+    },
+    {
+      "tipo": "migracao",
+      "funcionalidade": "302 - Fornecedores",
+      "texto": "O cadastro de fornecedores passou a ser feito pela nova plataforma web, acessível de qualquer navegador."
+    }
+  ]
+}

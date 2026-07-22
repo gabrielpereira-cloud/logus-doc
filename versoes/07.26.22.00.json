@@ -1,0 +1,16 @@
+{
+  "versao": "07.26.22.00",
+  "data": "2026-07-22",
+  "itens": [
+    {
+      "tipo": "migracao",
+      "funcionalidade": "401 - Contas a Pagar",
+      "texto": "A tela de Contas a Pagar foi migrada do sistema antigo para a nova plataforma web, com o mesmo fluxo de baixa e agora com filtros salvos por usuário."
+    },
+    {
+      "tipo": "migracao",
+      "funcionalidade": "302 - Fornecedores",
+      "texto": "O cadastro de fornecedores passou a ser feito pela nova plataforma web, acessível de qualquer navegador."
+    }
+  ]
+}
