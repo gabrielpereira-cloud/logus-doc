@@ -15,10 +15,8 @@
   --cor-texto-suave: #6d635d;
   --cor-borda: #e5e0da;
 
-  --tipo-novidade: #d9540d;
   --tipo-melhoria: #1f6fb2;
   --tipo-correcao: #c0392b;
-  --tipo-migracao: #6b3fa0;
 
   --raio: 10px;
   --sombra: 0 1px 2px rgba(58, 44, 34, .07), 0 4px 12px rgba(58, 44, 34, .07);
@@ -38,10 +36,8 @@
     --cor-texto-suave: #b0a49c;
     --cor-borda: #392f28;
 
-    --tipo-novidade: #ff8f4d;
     --tipo-melhoria: #6fb6ee;
     --tipo-correcao: #ef7a6d;
-    --tipo-migracao: #b18ce0;
 
     --sombra: 0 1px 2px rgba(0, 0, 0, .3), 0 4px 12px rgba(0, 0, 0, .25);
   }
@@ -304,10 +300,8 @@ h1, h2, h3 { margin: 0; line-height: 1.25; }
   background: var(--cor-grupo, var(--cor-texto-suave));
 }
 
-.grupo[data-tipo="novidade"] { --cor-grupo: var(--tipo-novidade); }
 .grupo[data-tipo="melhoria"] { --cor-grupo: var(--tipo-melhoria); }
 .grupo[data-tipo="correcao"] { --cor-grupo: var(--tipo-correcao); }
-.grupo[data-tipo="migracao"] { --cor-grupo: var(--tipo-migracao); }
 
 .grupo-titulo { color: var(--cor-grupo, inherit); }
 

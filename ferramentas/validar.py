@@ -18,7 +18,7 @@ from pathlib import Path
 RAIZ = Path(__file__).resolve().parent.parent
 PASTA = RAIZ / "versoes"
 INDICE = PASTA / "index.json"
-TIPOS_VALIDOS = ("novidade", "melhoria", "correcao", "migracao")
+TIPOS_VALIDOS = ("melhoria", "correcao")
 
 
 def chave_ordem(versao):

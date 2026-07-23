@@ -1,7 +1,7 @@
 # Página de Versões do Sistema
 
 Página estática (HTML + CSS + JavaScript puro, sem framework e sem CDN) que exibe o histórico de
-versões do sistema: novidades, melhorias, correções e as migrações de Delphi para a plataforma web.
+versões do sistema: melhorias e correções.
 
 Publicar uma versão nova = **subir um arquivo JSON** na pasta `versoes/`. Só isso: a página descobre
 os arquivos sozinha a cada carregamento. Nada de manifesto para atualizar, nada de rebuild, nada de
@@ -48,10 +48,8 @@ Se nenhuma das três funcionar, a página explica na tela o que liberar.
   "versao": "07.26.22.00",
   "data": "2026-08-05",
   "itens": [
-    { "tipo": "novidade", "funcionalidade": "505 - Nota de Crédito e Débito", "texto": "..." },
     { "tipo": "melhoria", "funcionalidade": "101 - Curva ABC",                 "texto": "..." },
-    { "tipo": "correcao", "funcionalidade": "118 - Preços e Promoções",        "texto": "..." },
-    { "tipo": "migracao", "funcionalidade": "302 - Fornecedores",              "texto": "..." }
+    { "tipo": "correcao", "funcionalidade": "118 - Preços e Promoções",        "texto": "..." }
   ]
 }
 ```
@@ -60,7 +58,8 @@ Regras:
 
 - **Nome do arquivo == campo `versao`.**
 - `data` em `yyyy-MM-dd` (a página exibe `dd/MM/yyyy`).
-- `tipo`: `novidade` | `melhoria` | `correcao` | `migracao`.
+- `tipo`: `melhoria` | `correcao`. Funcionalidade nova e migração de tela do sistema antigo entram
+  como `melhoria`.
 - `funcionalidade` é um texto no padrão **`"<número> - <Nome>"`** (ex.: `"302 - Fornecedores"`), com o
   número que a funcionalidade já tem no sistema. É opcional; quando presente vira o selinho do item.
   O número na frente é o que evita a mesma tela aparecer escrita de dois jeitos — mantenha-o.
@@ -180,7 +179,7 @@ topo de `assets/app.js`.
 - As datas do menu aparecem sozinhas logo na abertura: como a listagem só traz nomes de arquivo, a
   página busca os arquivos em segundo plano (4 por vez, `PRECARGA_SIMULTANEA` em `assets/app.js`) só
   para preencher as datas — e isso deixa a troca de versão instantânea, já em cache.
-- Filtro por tipo (Novidades / Melhorias / Correções / Migrações), aplicado dentro da versão exibida.
+- Filtro por tipo (Melhorias / Correções), aplicado dentro da versão exibida.
 - Link direto para uma versão e para um filtro via hash: `#v=07.26.21.00&tipos=correcao`.
 - Se o `<versao>.json` escolhido estiver ausente ou inválido, o card mostra o erro daquela versão e o
   menu continua navegável.

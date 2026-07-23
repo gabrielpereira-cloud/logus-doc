@@ -6,10 +6,8 @@
   var PRECARGA_SIMULTANEA = 4;
 
   var TIPOS = [
-    { id: 'novidade', rotulo: 'Novidades' },
     { id: 'melhoria', rotulo: 'Melhorias' },
-    { id: 'correcao', rotulo: 'Correções' },
-    { id: 'migracao', rotulo: 'Migrações Delphi → Java' }
+    { id: 'correcao', rotulo: 'Correções' }
   ];
 
   var el = {
