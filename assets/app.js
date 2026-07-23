@@ -10,6 +10,10 @@
     { id: 'correcao', rotulo: 'Correções' }
   ];
 
+  // Tipos que existiam antes e hoje entram como melhoria — arquivos antigos
+  // continuam aparecendo no grupo certo, sem cair em "Outros".
+  var TIPOS_ANTIGOS = { novidade: 'melhoria', migracao: 'melhoria' };
+
   var el = {
     tituloSistema: document.getElementById('titulo-sistema'),
     listaVersoes: document.getElementById('lista-versoes'),
@@ -189,6 +193,11 @@
         json.versao = json.versao || entrada.versao;
         json.data = json.data || entrada.data;
         entrada.data = json.data;
+
+        (json.itens || []).forEach(function (item) {
+          if (item && TIPOS_ANTIGOS[item.tipo]) item.tipo = TIPOS_ANTIGOS[item.tipo];
+        });
+
         atualizarDataNaLateral(entrada.versao, json.data);
         dados.set(entrada.versao, json);
         return json;
